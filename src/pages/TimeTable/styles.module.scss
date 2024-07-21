@@ -1,0 +1,66 @@
+.container {
+	margin: 2rem;
+	border-radius: 0.5rem !important;
+
+	.head {
+		display: flex;
+		justify-content: flex-start;
+		padding: 0.5rem;
+		background-color: #fff;
+		border-radius: 0.5rem !important;
+
+		h1 {
+			display: flex;
+			align-items: center;
+			margin: 10px;
+			font-size: 2rem;
+		}
+
+	}
+
+	.table_container {
+		border-radius: 0.5rem !important;
+		margin: 2rem 0;
+
+		table {
+			thead {
+				background-color: var(--primary);
+
+				th {
+					height: 20px;
+					font-size: 1.6rem;
+					padding: 10px 5px;
+					color: #fff;
+					border: 1px solid rgb(210, 210, 210);
+					font-weight: 500;
+				}
+			}
+
+			tbody {
+
+				td {
+					font-size: 1.4rem;
+					color: var(--black);
+					font-weight: 500;
+					border: 1px solid rgb(210, 210, 210);
+					padding: 10px 5px;
+					min-width: 80px;
+				}
+
+
+			}
+		}
+	}
+
+	.name {
+		background-color: var(--primary);
+		padding: 0 4px;
+		color: #fff;
+		border-radius: 0.5rem;
+	}
+
+	.active {
+		background-color: #ededed;
+		font-weight: bold;
+	}
+}

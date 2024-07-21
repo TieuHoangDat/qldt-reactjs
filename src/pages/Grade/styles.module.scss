@@ -1,0 +1,105 @@
+.container {
+	margin: 2rem;
+	border-radius: 0.5rem !important;
+
+	.head {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		padding: 1rem;
+		background-color: rgb(255, 255, 255);
+		border-radius: 0.5rem !important;
+		margin-bottom: 2rem;
+
+		h1 {
+			display: flex;
+			align-items: center;
+			margin: 5px;
+			font-size: 2rem;
+
+		}
+	}
+
+	.table_container {
+		border-radius: 0.5rem !important;
+		margin-bottom: 2rem;
+
+		.head {
+			display: flex;
+			align-items: flex-start;
+			justify-content: space-between;
+			padding: 0.7rem;
+			background-color: rgb(255, 255, 255);
+			border-radius: 0.5rem !important;
+
+			h1 {
+				display: flex;
+				align-items: center;
+				margin: 5px;
+				font-size: 2rem;
+
+			}
+		}
+
+		table {
+			thead {
+				background-color: #ebeaea;
+
+				th {
+					line-height: 1rem;
+					font-size: 1.6rem;
+					color: var(--black);
+					font-weight: 500;
+				}
+			}
+
+			tbody {
+				td {
+					font-size: 1.4rem;
+					color: var(--black);
+					font-weight: 500;
+					padding: 5px 0px;
+				}
+			}
+
+			p {
+				margin: 10px;
+			}
+		}
+
+		.no_data_img {
+			width: 20rem;
+			margin-left: -25rem;
+		}
+	}
+
+	.chart {
+		margin: 2rem 0;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+
+		>div {
+			flex: 1 1 calc(30% - 20px);
+			/* Tính toán độ rộng mỗi div với lề 20px */
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+		}
+	}
+
+	@media (max-width: 768px) {
+		.chart {
+			flex-wrap: wrap;
+
+			>div {
+				flex: 1 1 100%;
+				/* Mỗi div chiếm hết chiều rộng khi màn hình thu nhỏ */
+				margin-bottom: 20px;
+				/* Thêm margin dưới để tách các hàng */
+			}
+		}
+	}
+}

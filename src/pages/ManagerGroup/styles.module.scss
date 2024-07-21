@@ -1,0 +1,118 @@
+.container {
+	margin: 2rem;
+	border-radius: 0.5rem !important;
+
+	.head {
+		display: flex;
+		justify-content: flex-start;
+		padding: 0.5rem;
+		background-color: rgb(255, 255, 255);
+		border-radius: 0.5rem !important;
+
+		h1 {
+			display: flex;
+			align-items: center;
+			margin: 10px;
+			font-size: 2rem;
+		}
+
+		.select {
+			font-size: 16px;
+			min-width: 300px;
+			height: 40px;
+		}
+
+		.menuItem {
+			font-size: 16px;
+		}
+	}
+
+	.table_container {
+		border-radius: 0.5rem !important;
+		margin: 2rem 0;
+
+		table {
+			thead {
+				background-color: #ebeaea;
+
+				th {
+					height: 20px;
+					font-size: 1.6rem;
+					color: var(--black);
+					font-weight: 500;
+				}
+			}
+
+			tbody {
+				th {
+					height: 10px;
+				}
+
+				td {
+					font-size: 1.4rem;
+					color: var(--black);
+					font-weight: 500;
+
+					.delete_btn {
+						color: var(--error);
+
+						svg {
+							width: 2rem;
+							height: 2rem;
+						}
+					}
+
+					padding: 5px 0px;
+				}
+			}
+		}
+
+		.no_data_img {
+			width: 20rem;
+			margin-left: -25rem;
+		}
+	}
+
+
+
+	.chart {
+		margin-top: 2rem;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 20px;
+
+		>div {
+			flex: 1 1 calc(20% - 20px);
+			/* Tính toán độ rộng mỗi div với lề 20px */
+			background-color: #fff;
+			padding: 20px;
+			border-radius: 8px;
+			box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+			h1 {
+				font-size: 2rem;
+				margin-bottom: 20px;
+			}
+
+			p {
+				font-size: 1.5rem;
+				margin-bottom: 5px;
+			}
+		}
+	}
+
+	@media (max-width: 768px) {
+		.chart {
+			flex-wrap: wrap;
+
+			>div {
+				flex: 1 1 100%;
+				/* Mỗi div chiếm hết chiều rộng khi màn hình thu nhỏ */
+				margin-bottom: 20px;
+				/* Thêm margin dưới để tách các hàng */
+			}
+		}
+	}
+
+
+}

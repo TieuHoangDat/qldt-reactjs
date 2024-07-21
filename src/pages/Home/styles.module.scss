@@ -1,0 +1,60 @@
+.container {
+	margin: 2rem;
+	border-radius: 0.5rem !important;
+
+	.head {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		padding: 1rem;
+		background-color: rgb(255, 255, 255);
+		border-radius: 0.5rem !important;
+
+		h1 {
+			display: flex;
+			align-items: center;
+			margin: 10px;
+			font-size: 2rem;
+
+		}
+	}
+
+	.slideshow-container {
+		height: 440px;
+		padding-top: 20px;
+		max-width: 1000px;
+		position: relative;
+		margin: auto;
+	}
+
+	.mySlides {
+		display: none;
+	}
+
+	.fadess {
+		animation: fade 3s linear infinite;
+	}
+
+	@keyframes fade {
+		0% {
+			opacity: 0.8;
+		}
+
+		20% {
+			opacity: 1;
+		}
+
+		50% {
+			opacity: 1;
+		}
+
+		80% {
+			opacity: 1;
+		}
+
+		100% {
+			opacity: 0.8;
+		}
+	}
+
+}

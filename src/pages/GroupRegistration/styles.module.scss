@@ -1,0 +1,85 @@
+.container {
+	margin: 2rem;
+	border-radius: 0.5rem !important;
+
+	.head {
+		display: flex;
+		justify-content: flex-start;
+		padding: 0.5rem;
+		background-color: rgb(255, 255, 255);
+		border-radius: 0.5rem !important;
+
+		h1 {
+			display: flex;
+			align-items: center;
+			margin: 10px;
+			font-size: 2rem;
+		}
+
+		.select {
+			font-size: 16px;
+			min-width: 300px;
+			height: 40px;
+		}
+
+		.menuItem {
+			font-size: 16px;
+		}
+	}
+
+	.table_container {
+		border-radius: 0.5rem !important;
+		margin: 2rem 0;
+
+		table {
+			thead {
+				background-color: #ebeaea;
+
+				th {
+					height: 20px;
+					font-size: 1.6rem;
+					color: var(--black);
+					font-weight: 500;
+				}
+			}
+
+			tbody {
+				th {
+					height: 10px;
+				}
+
+				td {
+					font-size: 1.4rem;
+					color: var(--black);
+					font-weight: 500;
+
+					.delete_btn {
+						color: var(--error);
+
+						svg {
+							width: 2rem;
+							height: 2rem;
+						}
+					}
+
+					padding: 5px 0px;
+				}
+			}
+		}
+
+		.no_data_img {
+			width: 20rem;
+			margin-left: -25rem;
+		}
+	}
+
+	.active {
+		background-color: #bbffca;
+		font-weight: bold;
+	}
+
+	.active2 {
+		background-color: #ffbbbb;
+		font-weight: bold;
+	}
+}

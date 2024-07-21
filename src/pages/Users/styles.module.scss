@@ -1,0 +1,26 @@
+.container {
+	margin: 2rem;
+	border-radius: 0.5rem !important;
+
+	.head {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+		padding: 1rem;
+		background-color: rgb(255, 255, 255);
+		border-radius: 0.5rem !important;
+
+		h1 {
+			display: flex;
+			align-items: center;
+			margin: 10px;
+			font-size: 2rem;
+
+			svg {
+				width: 3rem;
+				height: 3rem;
+				margin-left: 0.5rem;
+			}
+		}
+	}
+}

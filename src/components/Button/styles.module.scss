@@ -1,0 +1,23 @@
+html {
+	.primary_btn {
+		border: none;
+		outline: none;
+		background: var(--primary);
+		color: #fff;
+		height: 3rem;
+		border-radius: 0.5rem;
+		font-size: 1.5rem;
+		font-weight: 500;
+		cursor: pointer;
+		padding: 1rem 0.7rem;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		text-transform: initial;
+		// min-width: 5rem;
+
+		&:hover {
+			background: #a90000;
+		}
+	}
+}

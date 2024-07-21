@@ -1,0 +1,51 @@
+.table_container {
+	border-radius: 0.5rem !important;
+
+	table {
+		thead {
+			background-color: #ebeaea;
+
+			th {
+				line-height: 3rem;
+				font-size: 1.6rem;
+				color: var(--black);
+				// text-transform: capitalize;
+				font-weight: 500;
+			}
+		}
+
+		tbody {
+			td {
+				font-size: 1.4rem;
+				color: var(--black);
+				font-weight: 500;
+
+				.edit_btn {
+					color: var(--blue-black);
+
+					svg {
+						width: 2rem;
+						height: 2rem;
+					}
+				}
+
+				.delete_btn {
+					color: var(--error);
+
+					svg {
+						width: 2rem;
+						height: 2rem;
+					}
+				}
+
+				padding: 10px 0px;
+
+			}
+		}
+	}
+
+	.no_data_img {
+		width: 20rem;
+		margin-left: -25rem;
+	}
+}
