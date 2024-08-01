@@ -11,14 +11,13 @@ export const login = async (user, dispatch) => {
 		const url = apiUrl;
 		const { data } = await axios.post(url, user);
 		console.log(data)
-		const decodeData = jwt_decode(data.data);
-		// if (decodeData.role!==1) {
-		// 	toast.error("You don't have access");
-		// 	dispatch(loginFailure());
-		// 	return;
-		// }
+		const decodeData = jwt_decode(data.access_token);
+
+		localStorage.setItem('access_token', data.access_token);
+    	localStorage.setItem('refresh_token', data.refresh_token);
+
 		toast.success(data.message);
-		dispatch(loginSuccess({ ...decodeData, token: data.data }));
+		dispatch(loginSuccess({ ...decodeData, token: data.access_token }));
 		window.location = "/";
 	} catch (error) {
 		dispatch(loginFailure());
