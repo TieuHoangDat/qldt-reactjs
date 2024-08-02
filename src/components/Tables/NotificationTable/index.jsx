@@ -25,7 +25,6 @@ const NotificationTable = ({ notifications }) => {
 	const handleDelete = (id) => {
 		deleteNotification(id, dispatch); // Thay đổi 
 		// setGroupRegistrations(prevRegistrations => prevRegistrations.filter(gr => gr.id !== id));
-		history.go(0);
 	};
 
 	return (
